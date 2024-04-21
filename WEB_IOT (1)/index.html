@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Classroom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Vujahday+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <div id="header">
+    <ul>
+      <li><b>Smart Classroom</b></li>
+    </ul>
+    <div id="banner">
+      <div class="tag">
+        <button type="button" id="J1601"><b>Room J1601</b></button>
+        <button type="button" id="J1602"><b>Room J1602</b></button>
+        <button type="button" id="J1603"><b>Room J1603</b></button>
+        <button type="button" id="J1604"><b>Room J1604</b></button> 
+      </div>       
+    </div>
+    <div id="main">
+      <div id="top">
+        <div id="time"> </div>
+        <script>
+          function dongho() {
+            var time = new Date();            
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+            if (hours < 10)
+            hours = "0" + hours;
+            if (minutes < 10)
+            minutes = "0" + minutes;
+            if (seconds < 10)
+            seconds = "0" + seconds;
+            document.getElementById("time").innerHTML =hours + ":" + minutes + ":" + seconds;
+            setTimeout("dongho()", 1000);            
+          };
+          dongho(); 
+        </script>    
+        <div id="info_wrap"> 
+          <div id="temperature">
+            <div id="temp_title">Temperature</div>
+            <div id="tempValue"></div>
+            <div><img src="hhhhh.png" id="temperature1"></div>
+          </div>  
+          <div id="attendent">
+            <div id="attend_title">Attendance</div>
+            <div id="attendValue"></div>
+            <div><img src="atten.png" id="attendent1"></div>
+          </div> 
+          <div id="network_speed">
+            <div id="network_title">Network Speed</div>
+            <div id="networkValue"></div>
+            <div><img src="sswifi.gif" id="network_speed1"></div>
+          </div> 
+        </div>
+      </div>
+      <div id="bot">
+        <div id="Room_J1601">
+          <div class="room">Room J1601</div>
+          <div class="light_wrap">
+            <img src="light.png" alt="" id="light1">
+            <button type="button" id="light1_on">ON</button>
+            <button type="button" id="light1_off">OFF</button>
+          </div>
+          <div class="ac_wrap">
+            <img src="maylanh.png" alt="" id="ml1">
+            <button type="button" id="ac1_on">ON</button>
+            <button type="button" id="ac1_off">OFF</button>
+          </div>
+          <div class="alarm_wrap">
+            <img src="chuong.png" alt="" id="ring1">
+            <button type="button" id="alarm1_on">ON</button>
+            <button type="button" id="alarm1_off">OFF</button>
+          </div>
+        </div>
+        <div id="Room_J1602">
+          <div class="room">Room J1602</div>
+          <div class="light_wrap">
+            <img src="light.png" alt="" id="light2">
+            <button type="button" id="light2_on">ON</button>
+            <button type="button" id="light2_off">OFF</button>
+          </div>
+          <div class="ac_wrap">
+            <img src="maylanh.png" alt="" id="ml2">
+            <button type="button" id="ac2_on">ON</button>
+            <button type="button" id="ac2_off">OFF</button>
+          </div>
+          <div class="alarm_wrap">
+            <img src="chuong.png" alt="" id="ring2">
+            <button type="button" id="alarm2_on">ON</button>
+            <button type="button" id="alarm2_off">OFF</button>
+          </div>
+        </div>
+        <div id="Room_J1603">
+          <div class="room">Room J1603</div>
+          <div class="light_wrap">
+            <img src="light.png" alt="" id="light3">
+            <button type="button" id="light3_on">ON</button>
+            <button type="button" id="light3_off">OFF</button>
+          </div>
+          <div class="ac_wrap">
+            <img src="maylanh.png" alt="" id="ml3">
+            <button type="button" id="ac3_on">ON</button>
+            <button type="button" id="ac3_off">OFF</button>
+          </div>
+          <div class="alarm_wrap">
+            <img src="chuong.png" alt="" id="ring3">
+            <button type="button" id="alarm3_on">ON</button>
+            <button type="button" id="alarm3_off">OFF</button>
+          </div>
+        </div>
+        <div id="Room_J1604">
+          <div class="room">Room J1604</div>
+          <div class="light_wrap">
+            <img src="light.png" alt="" id="light4">
+            <button type="button" id="light4_on">ON</button>
+            <button type="button" id="light4_off">OFF</button>
+          </div>
+          <div class="ac_wrap">
+            <img src="maylanh.png" alt="" id="ml4">
+            <button type="button" id="ac4_on">ON</button>
+            <button type="button" id="ac4_off">OFF</button>
+          </div>
+          <div class="alarm_wrap">
+            <img src="chuong.png" alt="" id="ring4">
+            <button type="button" id="alarm4_on">ON</button>
+            <button type="button" id="alarm4_off">OFF</button>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+  <div id="thongtin">
+    <ul>
+      <li>Contact Info</li>
+      <li>University of Technology and Education</li> 
+      <li>Khoa Đào Tạo Quốc Tế</li>       
+      <li>Email: 21119FIE@student.hcmute.edu.vn</li>        
+      <li>Hotline: Liên hệ Facebook Nguyễn Lê Ngọc Trâm</li>
+      <li>Trần Nam Phát</li>
+      <li>Nguyễn Lê Ngọc Trâm</li>
+      <li>Phan Minh Đức</li>
+    </ul>
+    <div id="hcmute"><img src="hcmute.png" id="hcmute"></div>    
+    <div id="fie"><img src="fie.png" id="fie"></div>    
+  </div>
+  <script type="module" src="functions.js"></script>
+</body>
